@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlie's Tic-Tac-Toe Arcade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Charlie's Tic-Tac-Toe Arcade</h1>
+        <p>© Charles Edward Davis 2026 Booth Hill School</p>
+        <div class="player-inputs">
+            <div>
+                <label for="playerX">Player X (Blue):</label>
+                <input type="text" id="playerX" placeholder="Enter name">
+            </div>
+            <div>
+                <label for="playerO">Player O (Red):</label>
+                <input type="text" id="playerO" placeholder="Enter name">
+            </div>
+        </div>
+        <div class="board" id="board"></div>
+        <div class="scoreboard">
+            <div class="player-score" id="playerXScore">
+                <p class="player-name" id="playerXName">Player X</p>
+                <p id="scoreX">Wins: 0</p>
+            </div>
+            <div class="player-score" id="playerOScore">
+                <p class="player-name" id="playerOName">Player O</p>
+                <p id="scoreO">Wins: 0</p>
+            </div>
+            <p id="draws">Draws: 0</p>
+        </div>
+        <button id="reset">Reset Game</button>
+    </div>
+    <div class="menu">
+        <h2 class="menu-title">Charlie's Arcade</h2>
+        <ul>
+            <li><a href="index.html">Tic Tac Toe</a></li>
+            <li><a href="chess.html">Chess</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <!-- Existing Tic Tac Toe content -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

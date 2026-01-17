@@ -1,0 +1,178 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #2b1055, #7597de);
+    color: #fff;
+}
+
+.game-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.board div {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #00ff00;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    box-shadow: 0 0 10px #00ff00;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.board div:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00ff00;
+}
+
+.board div.x {
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+}
+
+.board div.o {
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background: #00ff00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00ff00;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    background: #4dff4d;
+    box-shadow: 0 0 20px #4dff4d;
+}
+
+.player-inputs, .shape-switcher {
+    margin-bottom: 20px;
+}
+
+.player-inputs div, .shape-switcher div {
+    margin: 10px 0;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    text-shadow: 0 0 10px #fff;
+}
+
+.player-score {
+    text-align: center;
+    flex: 1;
+}
+
+.player-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+    margin-bottom: 10px;
+}
+
+.logo-selector {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.logo-selector label {
+    font-size: 1rem;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.logo-selector select {
+    padding: 5px;
+    font-size: 1rem;
+    border: 2px solid #00ff00;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px; /* Made the menu thinner */
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px; /* Adjusted padding for thinner menu */
+}
+
+.menu-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    color: #00ff00; /* Changed neon red to neon green */
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 15px 0;
+}
+
+.menu ul li a {
+    color: #00ff00; /* Changed neon red to neon green */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #fff;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
