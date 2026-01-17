@@ -134,15 +134,12 @@ button:hover {
 }
 
 .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 150px; /* Made the menu thinner */
-    height: 100%;
+    position: relative;
+    width: 100%;
     background: rgba(0, 0, 0, 0.8);
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     color: #fff;
-    padding: 10px; /* Adjusted padding for thinner menu */
+    text-align: center;
+    padding: 10px;
 }
 
 .menu-title {
@@ -154,24 +151,42 @@ button:hover {
     text-align: center;
 }
 
-.menu ul {
+.menu-toggle {
+    background: #00ff00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00ff00;
+    transition: background 0.3s;
+}
+
+.menu-toggle:hover {
+    background: #4dff4d;
+    box-shadow: 0 0 20px #4dff4d;
+}
+
+.menu-items {
+    display: none;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 10px 0 0;
 }
 
-.menu ul li {
-    margin: 15px 0;
+.menu-items li {
+    margin: 10px 0;
 }
 
-.menu ul li a {
-    color: #00ff00; /* Changed neon red to neon green */
+.menu-items li a {
+    color: #00ff00;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s;
 }
 
-.menu ul li a:hover {
+.menu-items li a:hover {
     color: #fff;
 }
 
