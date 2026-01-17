@@ -1,20 +1,19 @@
 body {
     font-family: 'Orbitron', sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     background: linear-gradient(135deg, #2b1055, #7597de);
     color: #fff;
+    overflow-x: hidden; /* Prevent horizontal scrolling on mobile */
 }
 
 .game-container {
     text-align: center;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00;
+    max-width: 100%; /* Ensure content fits within the screen width */
 }
 
 h1 {
@@ -25,10 +24,14 @@ h1 {
 
 .board {
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 5px;
     margin: 20px auto;
+    width: 90vw; /* Adjust board size for mobile */
+    height: 90vw; /* Keep the board square */
+    max-width: 400px; /* Limit size on larger screens */
+    max-height: 400px;
 }
 
 .board div {
